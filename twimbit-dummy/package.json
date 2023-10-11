@@ -7,11 +7,13 @@
     "test": "nx test"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.5",
     "@clerk/nextjs": "^4.25.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.12",
     "@mui/material": "^5.14.12",
+    "graphql": "^16.8.1",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
