@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Link from 'next/link';
 
 const bull = (
   <Box
@@ -28,7 +29,9 @@ export default function CharacterInfoCard({characters}: any) {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Link href={`/characterInfo/${character.id}`} passHref>
+                    <Button size="small">Learn More</Button>
+                </Link>
               </CardActions>
             </Card>
           ))}
