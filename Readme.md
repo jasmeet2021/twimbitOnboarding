@@ -7,7 +7,14 @@
 npm install
 ```
 
-3. start the dev server
+3. make sure to create a .env.local under frontend-orientation dir
+
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+```
+
+4. start the dev server
 
 ```
 nx serve frontend-orientation
