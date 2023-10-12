@@ -19,3 +19,11 @@ CLERK_SECRET_KEY=
 ```
 nx serve frontend-orientation
 ```
+
+
+> An important caveat
+
+- getServerSideProps (SSR) & getStaticSideProps/generation (SSG) does not have access to the apollo instance defined on client
+
+- hence whenever any page is using SSR or SSG they must have a seprate apollo client instance other than the global one that encapsulates the entire App reff: https://stackoverflow.com/questions/67163527/does-usequery-run-on-server-side-rendering
+
